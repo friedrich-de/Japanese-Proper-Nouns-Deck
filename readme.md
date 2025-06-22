@@ -1,6 +1,6 @@
 # Japanese Proper Nouns Deck MkII
 
-A huge update on the [existing Japanese Proper Nouns Deck](https://ankiweb.net/shared/info/3885156604). The following things where changed:
+A huge update on the [existing Japanese Proper Nouns Deck](https://ankiweb.net/shared/info/3885156604). The following things were changed:
 
 1. All cards now have pronunciations. Human pronunciations are used when available, otherwise TTS is used.
 2. All cards now have images. Images are sourced from DuckDuckGo and provided together with captions.
