@@ -1,0 +1,103 @@
+:root {
+    /* COLOUR PALETTE */
+    --accent: #e74c3c;
+    --secondary: #8e44ad;
+    --muted: #888888;
+
+    /* FONT SIZES (desktop defaults) */
+    --font-vocab: 5.3125rem;
+    --font-read: 1.44rem;
+    --font-md: 1.1rem;
+    --font-sm: 0.9rem;
+}
+
+/* MOBILE OVERRIDES */
+@media (max-width: 600px) {
+    :root {
+        --font-vocab: 4.375rem;
+        --font-read: 1rem;
+    }
+}
+
+/* BASE CARD */
+.card {
+    font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* EXPRESSION (front & back) */
+.expression {
+    font-size: var(--font-vocab);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+    color: inherit;
+}
+
+/* MAIN READING – matches .info size/colour */
+.main-reading {
+    font-size: var(--font-read);
+    color: inherit;
+    margin-bottom: 1rem;
+}
+
+/* OTHER READINGS */
+.other-readings {
+    font-size: var(--font-md);
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+/* FREQUENCY & TYPE CHIPS */
+.frequency,
+.type {
+    font-size: var(--font-sm);
+    color: var(--muted);
+}
+
+/* EXPLANATION BLOCK */
+.explanation {
+    font-size: 1rem;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+/* PICTURE GROUP */
+.picture-container {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid var(--muted);
+    border-radius: 0.5rem;
+}
+
+/* IMAGES */
+.picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    transition: filter 0.3s;
+}
+
+.picture img:hover {
+    filter: brightness(85%);
+}
+
+/* CAPTION */
+.picture-caption {
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 0.2rem;
+    color: var(--muted);
+}
+
+/* AUDIO WRAPPER */
+.audio {
+    margin: 1rem 0;
+}

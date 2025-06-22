@@ -1,0 +1,35 @@
+<div class="card">
+    <div class="expression">{{Expression}}</div>
+
+    <div class="main-reading">
+        <strong>{{Main_Reading}}</strong>
+        {{#Main_Reading_Frequency}}<span
+            class="frequency">({{Main_Reading_Frequency}})</span>{{/Main_Reading_Frequency}}
+        {{#Main_Reading_Type}}<span class="type">[{{Main_Reading_Type}}]</span>{{/Main_Reading_Type}}
+    </div>
+
+    {{#Other_Readings}}
+    <div class="other-readings">
+        <strong>Other readings:</strong> {{Other_Readings}}
+        {{#Other_Readings_Frequency}}<span
+            class="frequency">({{Other_Readings_Frequency}})</span>{{/Other_Readings_Frequency}}
+    </div>
+    {{/Other_Readings}}
+
+    {{#Explanation}}
+    <div class="explanation">{{Explanation}}</div>
+    {{/Explanation}}
+
+    {{#Picture}}
+    <div class="picture-container">
+        <div class="picture">{{Picture}}</div>
+        {{#Picture_Caption}}
+        <div class="picture-caption">{{Picture_Caption}}</div>
+        {{/Picture_Caption}}
+    </div>
+    {{/Picture}}
+
+    {{#Word_Audio}}
+    <div class="audio">{{Word_Audio}}</div>
+    {{/Word_Audio}}
+</div>

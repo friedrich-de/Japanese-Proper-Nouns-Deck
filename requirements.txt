@@ -1,0 +1,8 @@
+python-dotenv
+requests
+Pillow
+browserforge[all]
+duckduckgo_search
+openai
+genanki
+markdown
